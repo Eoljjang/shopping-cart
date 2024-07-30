@@ -7,4 +7,5 @@ The app utilizes "react-router" in order to build a multipage application that c
 https://shopping-cart-app101.netlify.app/home
 
 # Screenshots
-![ssPreview](https://github.com/Eoljjang/shopping-cart/blob/main/Screenshot%202024-07-30%20at%204.00.42%E2%80%AFPM.png)
+![ssPreview](https://github.com/Eoljjang/shopping-cart/blob/main/previewHome.png)
+![shopPreview](https://github.com/Eoljjang/shopping-cart/blob/main/previewShop.png)
