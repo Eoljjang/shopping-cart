@@ -9,3 +9,6 @@ https://shopping-cart-app101.netlify.app
 # Screenshots
 ![ssPreview](https://github.com/Eoljjang/shopping-cart/blob/main/previewHome.png)
 ![shopPreview](https://github.com/Eoljjang/shopping-cart/blob/main/previewShop.png)
+
+# Video Preview
+![videoPreview](https://github.com/Eoljjang/shopping-cart/blob/main/videoPreview.mov)
