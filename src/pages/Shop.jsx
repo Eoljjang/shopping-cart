@@ -7,7 +7,6 @@ export default function Shop() {
     const [products, setProducts] = useState([]) // Products to be displayed.
     const {cart, setCart, cartCount, setCartCount} = useOutletContext(); // Receives the lifted states!!
     
-
     // Fetch all products
     useEffect(()=> {
         fetch('https://fakestoreapi.com/products', {mode:"cors"})
