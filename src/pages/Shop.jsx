@@ -6,7 +6,8 @@ import { useState, useEffect } from 'react'
 export default function Shop() {
     const [products, setProducts] = useState([]) // Products to be displayed.
     const {cart, setCart, cartCount, setCartCount} = useOutletContext(); // Receives the lifted states!!
-    
+    const [loading, setLoading] = useState(true);
+
     // Fetch all products
     useEffect(()=> {
         fetch('https://fakestoreapi.com/products', {mode:"cors"})
@@ -14,6 +15,7 @@ export default function Shop() {
             // Copy json data into an array
             .then(json=>setProducts(json))
             .catch(error => console.log("Error fetching products:", error))
+            .finally(setLoading(false))
     }, []);
 
     const handleAdd = (product) => {
@@ -21,6 +23,8 @@ export default function Shop() {
         setCartCount(prevCartCount => prevCartCount + 1);
         console.log(cart);
     };
+
+    if (loading) return <h1>Store is loading, hold tight! (API may be down)</h1>
 
     return (
         <div id="shop-content">
