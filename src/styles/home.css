@@ -1,0 +1,89 @@
+/* For some reason this css page is applying to all components */
+body{
+    background-color: 	
+    #F6FEFF;
+}
+
+*{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+a:visited{
+    color: inherit;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #82DEE8;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+.logo{
+    font-size: 18px;
+    padding: 18px;
+    margin: 18px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container{
+    display: flex;
+    gap: 16px;
+    margin: 18px;
+}
+
+.nav-item{
+    padding: 12px 18px 12px 18px;
+    font-size: 18px;
+    width: 75px;
+    text-align: center;
+    transition: 0.15s;
+    border-radius: 12px;
+}
+
+.nav-item:hover{
+    scale: 1.1;
+    background-color: antiquewhite;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 18px;
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.description{
+    font-size: 22px;
+}
+
+.mascot-container img{
+    height: 450px;
+    width: auto;
+}
